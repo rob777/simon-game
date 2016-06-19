@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>Simon Game</h1>
+    <h2 class="msg">Ready to play?</h2>
+
+    <div class="game">
+        <div class="circle left-up" id="1" data-value="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></div>
+        <div class="circle right-up" id="2" data-value="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></div>
+        <div class="circle left-down" id="3" data-value="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></div>
+        <div class="circle right-down" id="4" data-value="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></div>
+    </div>
+
+    <span class="count">Count: <span id="count">0</span></span>
+
+    <button class="start-btn" role="button">START</button>
+
+    <form class="form">
+        <div class="switch-field">
+            <div class="switch-title">Strict Mode</div>
+            <input type="radio" id="switch_left" name="switch" value="yes" checked/>
+            <label for="switch_left">Yes</label>
+            <input type="radio" id="switch_right" name="switch" value="no" />
+            <label for="switch_right">No</label>
+        </div>
+    </form>
+    <div class="author">Created by <a href="https://github.com/rob777" target="_blank">Robert Oganiani</a></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+</body>
+
+</html>
